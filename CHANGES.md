@@ -14,6 +14,10 @@
 
 - He creado el archivpo `.gitignore` para evitar que se suban la carpeta con los módulos y el archivo privado `.env`.
 
+## Validación
+
+- He añadido la validación con express-validator para asegurar que la entrada sea correcta y mejorar la seguridad, limitando los tipos de caracteres que pueden enviarse y procesarse en la la petición (en este caso, el inicio de sesión).
+
 ## verifyToken.middleware.js
 
 - He centrado la lógica de la comprobación del token en este middleware por que es un paso intermedio antes de seguir manejando la respuesta. Si el usuario no está autenticado o autorisado, el siguiente paso ya no se implementa.
